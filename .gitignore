@@ -3,3 +3,4 @@ test/
 test_asm/
 docs/
 _build/
+.vscode/
