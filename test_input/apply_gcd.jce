@@ -1,0 +1,23 @@
+
+
+import "stdio"
+
+
+// Recursive function to compute GCD using Euclidean algorithm
+fn gcd(a: Int, b: Int) -> Int {
+    if b == 0 {
+        return a  // Base case: GCD(a, 0) = a
+    }
+    return gcd(b, a % b)  // Recursive step: GCD(b, a % b)
+}
+
+// Function that takes a function and applies it to two integers
+fn apply_gcd(gcd_func: Fn(Int, Int) -> Int, a: Int, b: Int) -> Int {
+    return gcd_func(a, b)  // Apply the gcd_func to the arguments a and b
+}
+
+// Test the apply_gcd function
+let num1 : Int = 56
+let num2 : Int = 98
+let result : Int = apply_gcd(gcd, num1, num2)
+// COMMENTING OUT FOR NOW TODO print(result)

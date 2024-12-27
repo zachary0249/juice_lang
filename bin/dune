@@ -1,0 +1,4 @@
+(executable
+ (public_name juice)
+ (name main)
+ (libraries juice))

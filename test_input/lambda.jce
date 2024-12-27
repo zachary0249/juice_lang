@@ -1,0 +1,18 @@
+
+
+
+fn factorial(n: Int) -> Int {
+    if n == 0 {
+        return 1  // Base case: factorial of 0 is 1
+    }
+    return n *  factorial(n - 1)  // Recursive case: n * factorial(n-1)
+}
+
+// test function
+fn f(x: Float) -> Float {
+    return x
+}
+
+fn apply_f(f: Fn(Float) -> Float, x: Float) -> Float {
+    return f(x)
+}

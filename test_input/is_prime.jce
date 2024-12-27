@@ -1,0 +1,22 @@
+import "stdio"
+
+// Function to check if a number is prime
+fn is_prime(n: Float) -> Bool {
+    if n <= 1. {
+        return false
+    }
+    let limit : Float = n / 2
+    let i : Float = 2
+    while (i <= limit) {
+        if n % i == 0. {
+            return false  // n is divisible by i, so it's not prime
+        }
+        i = i + 1.
+    }
+    return true  // n is prime
+}
+
+// Test the is_prime function
+let num : Float = 29.
+let result : Bool = is_prime(num)
+// print(result)
