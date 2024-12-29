@@ -24,6 +24,17 @@ This project features a custom compiler designed and implemented for **Juice Lan
     cd juice_lang
     ```
 
+## Example
+```java
+// Recursive function to calculate the factorial
+fn factorial(n: Int) -> Int {
+    if n == 0 {
+        return 1  // Base case: factorial of 0 is 1
+    }
+    return n * factorial(n - 1)  // Recursive case: n * factorial(n-1)
+}
+```
+
 
 ## Usage
 There are different commands:
